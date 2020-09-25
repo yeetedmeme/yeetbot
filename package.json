@@ -1,0 +1,34 @@
+{
+  "name": "yeetbot",
+  "version": "1.0.0",
+  "description": "Discord.js Bot.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.0.2",
+    "express": "^4.17.1",
+    "ffmpeg": "^0.0.4",
+    "ms": "^2.1.2",
+    "snekfetch": "^4.0.4"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeetedmeme/yeetbot.git"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "keywords": [
+    "node",
+    "discord.js",
+    "express"
+  ],
+  "author": "yeetedmeme",
+  "bugs": {
+    "url": "https://github.com/yeetedmeme/yeetbot/issues"
+  },
+  "homepage": "https://github.com/yeetedmeme/yeetbot/"
+}
