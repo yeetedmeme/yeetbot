@@ -6,7 +6,7 @@ First download to your pc, or clone from glitch, whitchever you choose
 
 Run `npm install` in your terminal, command prompt or glitch's terminal, again depending on what you are using
 
-Put your token into token.json
+Put your token into line 97 of index.js
 
 Next edit prefix.json and change the prefix whatever you want (Deafult is !!)
 
