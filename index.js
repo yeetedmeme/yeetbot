@@ -17,7 +17,6 @@ for (const file of commandFiles) {
   client.commands.set(command.name, command);
 }
 
-const token = require("./token.json");
 
 const config = require("./config.json");
 global.config = config;
@@ -55,16 +54,6 @@ client.on("message", async message => {
 
   if (cmdFile && message.content.startsWith(prefix)) {
     cmdFile.run(client, message, args);
-
-    var swears = require("./swears.json").array;
-
-    swears.forEach(word => {
-      if (message.content.toLowerCase().includes(word)) {
-        message.reply(`NO SWORE IN MY GOOD CRISTIAN MINECRAFT SERVER`);
-        message.reply("AHHHHHHHHHHHHHH NO SWAER");
-        message.reply("yeeted will have your ass for this!");
-      }
-    });
   }
 
   if (command === "!!ping") {
@@ -105,7 +94,7 @@ client.on("message", async message => {
   }
 });
 
-client.login(token);
+client.login(global.token)
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
@@ -119,6 +108,8 @@ app.get("/", function(request, response) {
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
 });
+
+global.token = [""]
 
 global.devs = ["503934026189635594", "640224786366201856"];
 
