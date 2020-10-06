@@ -25,7 +25,7 @@ client.on("ready", () => {
   console.log(
     `Bot has started, with ${client.users.cache.size} users, in ${client.channels.cache.size} channels of ${client.guilds.cache.size} guilds.`
   );
-  client.user.setActivity(`hentai`, { type: "WATCHING" });
+  client.user.setActivity(`TEXT HERE`, { type: "WATCHING" });
 });
 
 client.on("guildCreate", guild => {
